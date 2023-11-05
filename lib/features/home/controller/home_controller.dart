@@ -11,4 +11,6 @@ class HomeController extends _$HomeController {
   HomeState build() {
     return const HomeState();
   }
+
+  fetchSomething(){}
 }

@@ -3,6 +3,7 @@ import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:rive/rive.dart';
 import 'package:riverpod_gen_trial/features/auth/controller/auth_controller.dart';
 import 'package:riverpod_gen_trial/features/auth/state/auth_state.dart';
+import 'package:riverpod_gen_trial/features/home/view/home_view.dart';
 import 'package:riverpod_gen_trial/utils/app_color.dart';
 import 'package:riverpod_widget_annotation/riverpod_widget_annotation.dart';
 
@@ -85,8 +86,9 @@ class AuthView extends AuthViewBase {
                         onPressed: () async {
                           bool isSuccessful = await controller.login();
                           if (isSuccessful) {
-                            // Navigator.of(context).push(MaterialPageRoute(
-                            //     builder: (context) => const HomeView()));
+                            await Future.delayed(const Duration(seconds: 1));
+                            Navigator.of(context).push(MaterialPageRoute(
+                                builder: (context) => const HomeView()));
                           }
                         },
                         style: ElevatedButton.styleFrom(

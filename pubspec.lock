@@ -539,10 +539,9 @@ packages:
   riverpod_feature_generator:
     dependency: "direct dev"
     description:
-      name: riverpod_feature_generator
-      sha256: "186f738c3af39ced5750983147102939a7ac88b18c71d9584c0048d4fb5823ec"
-      url: "https://pub.dev"
-    source: hosted
+      path: "../riverpod_feature_generator"
+      relative: true
+    source: path
     version: "0.0.11"
   riverpod_generator:
     dependency: "direct dev"
@@ -555,10 +554,9 @@ packages:
   riverpod_widget_annotation:
     dependency: "direct main"
     description:
-      name: riverpod_widget_annotation
-      sha256: f48d573ed8c721bed45e6861f5d1ce38f0e0224f73b9bb808d03839a0ca7bc41
-      url: "https://pub.dev"
-    source: hosted
+      path: "../riverpod_widget_annotation"
+      relative: true
+    source: path
     version: "0.0.1"
   rxdart:
     dependency: transitive

@@ -18,9 +18,13 @@ class AuthController extends _$AuthController {
       emailFocusNode: FocusNode(),
       passwordFocusNode: FocusNode(),
     ));
+    _init();
+    return state.value!;
+  }
+
+  _init() {
     listenFocus();
     initRive();
-    return state.value!;
   }
 
   void listenFocus() {
@@ -94,12 +98,13 @@ class AuthController extends _$AuthController {
   }
 
   Future<bool> login() async {
-    //showLoadingDialog(context);
-    state = const AsyncLoading();
     state.value?.passwordFocusNode?.unfocus();
     state.value?.emailFocusNode?.unfocus();
     state.value?.isChecking?.change(false);
     state.value?.isHandsUp?.change(false);
+
+    state = const AsyncLoading();
+
     await Future.delayed(
       const Duration(milliseconds: 2000),
     );

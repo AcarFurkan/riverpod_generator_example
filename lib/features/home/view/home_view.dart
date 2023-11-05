@@ -7,25 +7,29 @@ import 'package:riverpod_widget_annotation/riverpod_widget_annotation.dart';
 
 part 'home_view.g.dart';
 
-// part './components/grid_index_card.dart';
-// part './components/signal_table.dart';
-// part './components/mock_grid_items.dart';
-@RiverpodWidgetAnnotation()
-class HomeView extends StatelessWidget {
+@riverpodWidget
+class HomeView extends HomeViewBase {
   const HomeView({super.key});
 
   @override
-  Widget build(BuildContext context) {
+  Widget builder(BuildContext context, HomeController controller,
+      HomeState state, WidgetRef ref) {
     return Scaffold(
         body: Center(
       child: Column(
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
+          ElevatedButton(
+            onPressed: () {
+              controller.fetchSomething();
+            },
+            child: const Text("Fetch Something"),
+          ),
           Text(
             "HOME VIEW",
             style: Theme.of(context).textTheme.headlineLarge?.copyWith(
-              fontWeight: FontWeight.bold,
-            ),
+                  fontWeight: FontWeight.bold,
+                ),
           ),
           const SizedBox(height: 16),
           FlutterLogo(

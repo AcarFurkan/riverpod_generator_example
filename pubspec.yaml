@@ -14,7 +14,8 @@ dependencies:
     sdk: flutter
 
   cupertino_icons: ^1.0.2
-  riverpod_widget_annotation: ^0.0.1
+  riverpod_widget_annotation: 
+    path: ../riverpod_widget_annotation/
   freezed: ^2.4.5
   freezed_annotation: ^2.4.1
   riverpod_annotation: ^2.2.0
@@ -35,8 +36,8 @@ dev_dependencies:
   flutter_lints: ^2.0.0
   build_runner: 2.3.3 
   riverpod_generator: ^2.3.3
-  
-  riverpod_feature_generator: ^0.0.11
+  riverpod_feature_generator:
+    path: ../riverpod_feature_generator/
 
 flutter:
 

@@ -1,16 +1,15 @@
-# riverpod_gen_trial
+# Riverpod Feature Generator Example 
 
-A new Flutter project.
 
-## Getting Started
+In this example, I attempted to demonstrate how the riverpod_feature_generator can be used. To illustrate this, I coded a sample login screen.
 
-This project is a starting point for a Flutter application.
-
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+<table>
+  <tr>
+    <th>Successful Login</th>
+    <th>Unsuccessful Login</th>
+  </tr>
+  <tr>
+    <td><img src="https://github.com/AcarFurkan/riverpod_generator_example/assets/65075121/64293cdb-2a12-4b2d-bb81-46cbf802c32f" alt="Successful Login"></td>
+    <td><img src="https://github.com/AcarFurkan/riverpod_generator_example/assets/65075121/c93ccc29-3e96-4ed4-b067-9cc1e422e7d2" alt="Unsuccessful Login"></td>
+  </tr>
+</table>
